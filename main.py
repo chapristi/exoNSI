@@ -52,5 +52,13 @@ for g in range(1,11):
     if(i == 10):
       print('\n ===============================================')
 """
+nb = int(input("entrez un nombre "))
+result =  []
+
+while(nb != 0):
+  r = int(nb%2)
+  nb = int(nb/2)
+  result.append(r)
+print(result)
 
 
