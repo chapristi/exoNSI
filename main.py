@@ -22,13 +22,13 @@ print(NombreOccurence("aazdughayizdg","a"))
 """
 """
 
-def PositionChar(chaine,car):
-  position = []
+def PositionChar(chaine,car,pos=0):
   for i in range(len(chaine)):
     if chaine[i] == car:
-       position.append(i)
-  return position
-print(PositionChar("ozoerzoeroo","o"))
+        pos= i
+        print(pos)
+  
+PositionChar("Bonjour tout le monde","o")
 """
 
 """
