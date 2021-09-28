@@ -40,9 +40,17 @@ annee = int(input("année de naissance"))
 moi =input("votre moi de naissance ")
 repondre(nom,annee,moi)
 """
-def TableMulti():
- 
-
-TableMulti()
+"""
+tableau pythagore 
+for g in range(1,11):
+  
+  for i in range(1,11):
+    if (g == 1 and i == 1):
+      print(f"    " , end="" )
+    print(f'| {i*g} ',end="")
+    
+    if(i == 10):
+      print('\n ===============================================')
+"""
 
 
