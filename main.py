@@ -46,11 +46,11 @@ for g in range(1,11):
   
   for i in range(1,11):
     if (g == 1 and i == 1):
-      print(f"    " , end="" )
-    print(f'| {i*g} ',end="")
+      print("      " , end="" )
+    print(f'|  {i*g}  ',end="")
     
     if(i == 10):
-      print('\n ===============================================')
+      print('\n ====================================================================')
 """
 nb = int(input("entrez un nombre < 256 "))
 result =  []
