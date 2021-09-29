@@ -59,6 +59,6 @@ while(nb != 0):
   r = int(nb%2)
   nb = int(nb/2)
   result.append(r)
+  result.reverse()
 for i in result:
   print(i,end="")
-
