@@ -52,6 +52,8 @@ for g in range(1,11):
     if(i == 10):
       print('\n ====================================================================')
 """
+
+"""
 nb = int(input("entrez un nombre < 256 "))
 result =  []
 
@@ -62,3 +64,22 @@ while(nb != 0):
   result.reverse()
 for i in result:
   print(i,end="")
+"""
+
+
+nb = int(input("entrez un nombre < 256 "))
+result =  []
+compteur = 0;
+while(nb != 0):
+  r = int(nb%2)
+  nb = int(nb/2)
+  result.append(r)
+
+result.reverse()
+
+for i in result:
+  if compteur % 4 == 0 and compteur != 0:
+    print(" ", end="")
+  print(i,end="")
+  compteur += 1
+
