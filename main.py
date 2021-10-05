@@ -42,15 +42,23 @@ repondre(nom,annee,moi)
 """
 """
 tableau pythagore 
+print("",end="   |  ")
+for f in range(1,11):
+    print(f , end="   |  ")
+print()  
+print(" ======================================================================")
 for g in range(1,11):
-  
+  print(g,end=" ")
+  if(g < 10):
+      print(end=" ")
   for i in range(1,11):
-    if (g == 1 and i == 1):
-      print("      " , end="" )
-    print(f'|  {i*g}  ',end="")
-    
+    if(i*g > 9):
+      print(f'|  {i*g}  ',end="")
+    else:
+       print(f'|  {i*g}   ',end="")
+  
     if(i == 10):
-      print('\n ====================================================================')
+      print('\n =====================================================================')
 """
 
 """
@@ -82,4 +90,12 @@ for i in result:
     print(" ", end="")
   print(i,end="")
   compteur += 1
+
+ 
+
+
+
+
+
+
 
