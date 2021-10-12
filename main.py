@@ -94,7 +94,35 @@ for i in result:
  
 
 
-
+ok=False
+while(ok==False):
+  enters = ["1->8bits","|2->16bits" , "|3->32bits"]
+  print("\n-----------------------------------")
+  print("Entrezleformatdelabase:")
+  for i in enters : 
+    print(i, end="")
+  choix = int(input("\nVotrechoix:"))
+  if choix==1 or choix==2 or choix==3:
+    print(f"votre choix a étéb de {enters[choix -1] }")
+    nb = int(input("choisisez un nombre binaire a convetir"))
+    for s in str(nb):
+      if s[0] == "-": 
+        print("le nombre est negatif")
+        print(bin(nb))
+        break
+      else:
+        result =  []
+        compteur = 0;
+        while(nb != 0):
+          r = int(nb%2)
+          nb = int(nb/2)
+          result.append(r)
+        result.reverse()
+        for i in result:
+          if compteur % 4 == 0 and compteur != 0:
+            print(" ", end="")
+          print(i,end="")
+          compteur += 1
 
 
 
