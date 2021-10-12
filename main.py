@@ -129,3 +129,24 @@ while(ok==False):
 #retourner une liste a l'envaire deja fait a la maison
 
 #effecer dans un eliste les element en double
+
+
+
+
+
+
+moyenne = 0
+totalcoef = 0
+while True:
+  note = int(input("votre note"))
+  if note < 0 :
+    break
+  coef = int(input("son coeff"))
+  totalcoef  += coef
+  moyenne += note * coef
+  
+
+
+print(moyenne/totalcoef)
+  
+
