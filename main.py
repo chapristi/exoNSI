@@ -128,3 +128,4 @@ while(ok==False):
 
 #retourner une liste a l'envaire deja fait a la maison
 
+#effecer dans un eliste les element en double
