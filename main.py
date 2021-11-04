@@ -159,3 +159,20 @@ def inverser(mot):
 
 print(inverser("python"))
     
+
+  
+  
+  
+  
+  def palyndrome(mot):
+  nv_mot= ""
+  for i in range(1 , len(mot) + 1):
+     nv_mot +=  mot[len(mot) -i ]
+  
+  if nv_mot == mot:
+    return True
+  else:
+    return False
+
+print(palyndrome('kayak'))
+    
