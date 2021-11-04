@@ -150,3 +150,12 @@ while True:
 print(moyenne/totalcoef)
   
 
+  
+def inverser(mot):
+  nv_mot= ""
+  for i in range(1 , len(mot) + 1):
+     nv_mot +=  mot[len(mot) -i ]
+  return nv_mot
+
+print(inverser("python"))
+    
