@@ -176,3 +176,4 @@ print(inverser("python"))
 
 print(palyndrome('kayak'))
     
+https://mathete.net/nsi/
