@@ -207,5 +207,12 @@ def PlusGrand(list):
 
 print(PlusGrand([1,2,2,5,45,3,15,43,354,4,555,555555]))
 
+
+
+#extend va nous eviter d'avoir un tableau dans un tableau
+list = ["chien","chat","petit"]
+list.extend(["chine","df"])
+
+print(list)
     
 https://mathete.net/nsi/
