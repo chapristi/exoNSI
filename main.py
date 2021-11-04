@@ -175,5 +175,37 @@ print(inverser("python"))
     return False
 
 print(palyndrome('kayak'))
+
+
+
+
+
+
+def PlusPetit(list):
+  hight = 0
+  for i in list:
+    if hight > i or hight == 0 :
+      hight = i
+    
+  return hight
+
+
+print(PlusGrand([3,4,5,5,6,56,5,67,5,486,786,7456,46,5798,74,54,98]))
+
+
+
+
+
+def PlusGrand(list):
+  hight = 0
+  for i in list:
+    hight = i
+    if hight < i:
+      hight = i
+  return hight
+
+
+print(PlusGrand([1,2,2,5,45,3,15,43,354,4,555,555555]))
+
     
 https://mathete.net/nsi/
