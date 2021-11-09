@@ -216,3 +216,149 @@ list.extend(["chine","df"])
 print(list)
     
 https://mathete.net/nsi/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #for i in range(0,101):
+  #print(i)
+
+'''
+nbr = int(input("entrez un nombre entre 10 et 100"))
+if nbr < 10:
+  print("le nombre enbtré est trop petit")
+elif nbr>100:
+  print("le nombre entré est trop grand ")
+else:
+  print("le nombre entré est correct")
+  '''
+
+'''
+def saisir():
+  number_return = []
+  while True:
+    nbr = int(input("entrez un nombre entre 10 et 100"))
+    if nbr < 0:
+      break
+    else:
+      number_return.append(nbr)
+  return number_return 
+
+
+
+saisir = saisir()
+print(saisir)
+
+multiple_trois = []
+for i in saisir:
+  if i%3==0:
+    multiple_trois.append(i)
+
+print(multiple_trois)
+'''
+
+'''
+def methode(valeur):
+  x =1 
+  for i in range(10):
+    x = (x+valeur/x)/2
+  return x
+for i in range(0,20):
+  print(methode(i))
+  print("----")
+'''
+'''
+
+a = int(input("entrez la vealeur de a "))
+b = int(input("entrez la valeure de b "))
+c = int(input("entrez la valeure de c"))
+
+x = a
+for i in range(b):
+  x = (x+c/x)/2
+print(x)
+
+
+'''
+
+'''
+
+phrase = input("entrez une phrase")
+replace = phrase.replace(" ","")
+split = phrase.split(" ")
+
+compteurMots = 0 
+compteurLettres = 0
+for i in replace:
+ compteurLettres+=1
+
+print(f"le nombre de charactere est de {compteurLettres}")
+
+
+
+for i in split:
+  compteurMots += 1
+
+print(f"le nombre de mot est de {compteurMots}")
+
+'''
+
+
+message  = input("entrez un message")
+
+
+print(type(message))
+
+l_message = []
+
+
+for i in range(0, len(message)):
+  l_message.append(ord(message[i]))
+
+print(message)
+print(l_message)
+
+
+cle  = input("entrez une clé")
+l_cle = []
+
+for f in range(0, len(cle)):
+  l_cle.append(ord(cle[f]))
+
+print(l_cle)
+
+# ' ' => 32 
+# z => 122
+# ~ => 126
+
+
+l_secret = []
+print(len(l_cle))
+for s in range(0,len(l_message)):
+  for t in range(0,len(l_cle)):
+    l_secret.append(l_cle[t] +  l_message[s])
+    if(t > len(l_cle)):
+      for z in range(0,len(l_cle)):
+        l_secret.append(l_cle[z] +  l_message[s])
+
+secret = ""
+for i in l_secret:
+  secret += chr(i)
+
+
+print(secret)
+
+
+
+
+     
+  
+
+
+
+print(l_secret)
