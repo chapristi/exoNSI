@@ -309,6 +309,8 @@ print(f"le nombre de mot est de {compteurMots}")
 '''
 
 
+
+
 message  = input("entrez un message")
 
 
@@ -338,16 +340,36 @@ print(l_cle)
 
 
 l_secret = []
-print(len(l_cle))
-for s in range(0,len(l_message)):
-  for t in range(0,len(l_cle)):
-    l_secret.append(l_cle[t] +  l_message[s])
-    if(t > len(l_cle)):
-      for z in range(0,len(l_cle)):
-        l_secret.append(l_cle[z] +  l_message[s])
+try:
+  for s in range(0,len(l_message)):
+
+  
+    #print(l_cle[s])
+    #print( l_message[s])
+    #print(l_cle[s] +  l_message[s])
+
+  
+
+    
+   
+      print(l_cle[s])
+      print( l_message[s])
+      print(l_cle[s] +  l_message[s])
+
+      l_secret.append(l_cle[s] +  l_message[s])
+      print(chr(l_cle[s] +  l_message[s]))
+
+except IndexError:
+  for z in range(0,len(l_cle)):
+      l_secret.append(l_cle[z] +  l_message[s])
+      print(chr(l_cle[z] +  l_message[z]))
+
+
+print(l_secret)
 
 secret = ""
 for i in l_secret:
+
   secret += chr(i)
 
 
@@ -356,9 +378,4 @@ print(secret)
 
 
 
-     
-  
 
-
-
-print(l_secret)
