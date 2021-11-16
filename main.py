@@ -379,3 +379,34 @@ print(secret)
 
 
 
+
+phrase=input("entrezlaphraseàcoder:\n")
+l_phrase=[]
+
+for c in phrase:
+  l_phrase.append(ord(c))
+
+
+print(l_phrase)
+cle=input("entrezlaclé:\n")
+cle=cle.upper()
+l_cle=[]
+for c in cle:
+  l_cle.append(ord(c))
+print(l_cle)
+l_secret=[]
+secret=""
+for index in range(len(l_phrase)):
+  l_secret.append(l_phrase[index]+l_cle[index%len(l_cle)])
+
+  print("listesecret:")
+  print(l_secret)
+for index in range(len(l_phrase)):
+  if(l_secret[index] <=126):
+    secret+=chr(l_secret[index])
+  else:
+    secret+=chr(l_secret[index]+32-126)
+print("secret:")
+print(secret)
+
+
