@@ -537,6 +537,34 @@ while True :
     print("Bon je crois que j'ai gagné")
     break
 
+    
+    
+    
+    
+    
+    
+    '''
+premiers = [1]
+def est_premier(test):
+  premier  = True
+  for i in range(2,9):
+    print(test*i%2)
+   
+    if test%i ==0 :
+      
+      premier = False
+    return premier
+
+
+
+
+
+for i in range(2,10):
+  if(est_premier(i)):
+    premiers.append(i)
+print(premiers)
+
+'''
 
 
 
