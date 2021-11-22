@@ -440,9 +440,20 @@ for i in range(0,10000):
     compteur+=1
 '''
 
+'''
 compteur = 0 
 for i in range(0,10000):
-  if compteur == 101:
+  if compteur == 100:
+    break
+  if i % 3 == 0:
+    print(i)
+    compteur+=1
+'''
+
+'''
+compteur = 0 
+for i in range(0,10000):
+  if compteur == 100:
     break
   if i % 3 == 0:
     print(i)
@@ -450,6 +461,38 @@ for i in range(0,10000):
   elif i % 5 == 0:
      print(i)
      compteur+=1
+
+
+'''
+'''
+
+from random import randint
+
+a = randint(1,999)
+print(a)
+'''
+
+
+
+from random import randint
+a = randint(1,1000)
+essaies = 0 
+while True:
+ 
+ userEnter =  int(input('entrez un nombre'))
+ essaies += 1 
+ if userEnter < a :
+   print("Trop petit")
+ elif userEnter > a : 
+   print("Trop grand")
+ else:
+   print(f"Bravo vous avez trouvé en {essaies} essaies")
+   break
+
+
+
+
+
 
 
   
