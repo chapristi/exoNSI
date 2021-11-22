@@ -493,6 +493,51 @@ while True:
 
 
 
+  
+  
+from random import randint
+
+userChoice  = int(input('choissisez un nombre en 1 et 1000'))
+
+
+
+
+print("l'ordinateur va commencer a chercher votre nombre")
+print("....")
+d = 1000
+c = 1
+
+
+while True :
+  
+  a = randint(c,d)
+  print(f"{a}nombre choisi par l'ordi " )
+  #entrez 1 si le nombre proposé est trop petit , 2 si il est trop grand et #3 si c'est gagné pas de triche svp ;) 
+  
+  userHelp = int(input("hop"))
+
+  if userHelp == 1:
+    if userChoice < a:
+      print("interdit a la triche le jeu s'arrete ;)")
+      break
+    c = a
+    
+    
+  elif userHelp==2:
+    if userChoice > a:
+      print("interdit a la triche le jeu s'arrete ;)")
+      break
+    d = a
+
+  
+  elif userHelp ==3:
+    if userChoice != a:
+      print("interdit a la triche le jeu s'arrete ;)")
+      break
+    print("Bon je crois que j'ai gagné")
+    break
+
+
 
 
   
