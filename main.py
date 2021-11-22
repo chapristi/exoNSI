@@ -263,7 +263,7 @@ print(multiple_trois)
 '''
 
 '''
-def methode(valeur):
+def methode(valeur):n
   x =1 
   for i in range(10):
     x = (x+valeur/x)/2
@@ -568,4 +568,34 @@ print(premiers)
 
 
 
-  
+  from time import sleep,localtime
+
+
+
+
+def afficher_horloge():
+  t = localtime()
+  print(t)
+  print(t.tm_sec)
+
+
+
+while True:
+  afficher_horloge()
+  sleep(1)
+
+  #cela affiche les informations sur le temps actuelle tm_year correspond aux années ...  toute les secondes 
+
+  #sleep sert a mettre un arret dans le code il prend en parametre un int c'est en seconde  
+
+  #voila ici la preuve on voit bien que les seconde change de 1 en 1 car on a mis un sleep de 1 
+  print(localtime().tm_sec)
+  sleep(1)
+  print(localtime().tm_sec)
+
+
+
+  print(localtime().tm_hour)
+  print(localtime().tm_hour)
+
+
