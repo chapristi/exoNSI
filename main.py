@@ -547,10 +547,11 @@ while True :
 premiers = [1]
 def est_premier(test):
   premier  = True
-  for i in range(2,9):
-    print(test*i%2)
-   
-    if test%i ==0 :
+  for i in range(1,10):
+    print(9%2)
+
+    
+    if  test != 2 and test % 2== 0 or test == 9 :
       
       premier = False
     return premier
@@ -563,7 +564,7 @@ for i in range(2,10):
   if(est_premier(i)):
     premiers.append(i)
 print(premiers)
-
+> 2 > 2 > 2 
 '''
 
 
