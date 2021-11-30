@@ -599,4 +599,146 @@ while True:
   print(localtime().tm_hour)
   print(localtime().tm_hour)
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  """                                                           
+a = 2                                                         
+b = 5                                                         
+b,a = a,b                                                     
+print(a,b)                                                    
+                                                              
+                                                              
+                                                              
+a = 2                                                         
+b = 5                                                         
+c = a                                                         
+a = b                                                         
+b = c                                                         
+print(a,b)                                                    
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+def AskInfos():                                               
+    prenom = input("votre prenom")                            
+    nom = input("votre nom")                                  
+    age = int(input("votre age"))                             
+    return  prenom,nom,age                                    
+                                                              
+infos = AskInfos()                                            
+print(infos[0])                                               
+print(infos[1])                                               
+print(infos[2])                                               
+                                                              
+                                                              
+"""                                                           
+"""                                                           
+import math                                                   
+def CalculDelta():                                            
+    a = int(input("entrez la valeure de a"))                  
+    b = int(input("entrez la valeure de b"))                  
+    c = int(input("entrez la valeure de c "))                 
+    return (b**2)-4*a*c,a,b,c                                 
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+def CalculRacine():                                           
+    delta = CalculDelta()                                     
+    if delta[0] > 0:                                          
+        print("deux solutions possible")                      
+        x1 = (-delta[2] + math.sqrt(delta[0]))/2*delta[1]     
+        print(f"x1 = {x1}")                                   
+        x2 = (-delta[2] - math.sqrt(delta[0])) / 2 * delta[1] 
+        print(f"x2 = {x2}")                                   
+                                                              
+    elif delta[0] == 0:                                       
+        print("une solution")                                 
+        x0 = (-[delta[2]]) / 2* delta[1]                      
+                                                              
+    else:                                                     
+        print("pas de solution reelle ")                      
+CalculRacine()                                                
+                                                              
+"""                                                           
+                                                              
+                                                              
+"""                                                           
+                                                              
+                                                              
+t1 = 2,5                                                      
+t2  = 10 , -1                                                 
+t3  = t1 + t2                                                 
+print(t3)                                                     
+t4  = 3* t1                                                   
+print(t4)                                                     
+print(len(t1))                                                
+print(len(t3))                                                
+print(5 in  t1)                                               
+"""                                                           
+                                                              
+"""                                                           
+                                                              
+def AskList() :                                               
+    values = []                                               
+    while True:                                               
+        a = input("entrez les valeurs que vous souhaitez")    
+        if str(a) == "stop":                                  
+            break                                             
+        values.append(int(a))                                 
+                                                              
+                                                              
+    return values                                             
+def TrieBulleList(tab):                                       
+    for i in range(len(tab),1, -1):                           
+        for j in range(0, i-1):                               
+            if tab[j+1] < tab[j]:                             
+                tab[j] ,tab[j + 1] = tab[j + 1],tab[j]        
+    return tab                                                
+                                                              
+                                                              
+list = AskList()                                              
+print(TrieBulleList(list))                                    
+ """                                                          
 
