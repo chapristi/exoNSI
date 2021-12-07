@@ -746,3 +746,53 @@ print(trieBulles[0])
 print(f"{trieBulles[1]} de tests ont été effectués")
 print("il ets possible d'ameliorer sont algorithme ")                                                          
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from random import randint
+def rempliListe(nbr_entier,valeur_base,valeur_haute):
+ 
+  liste = {}
+  for i in range(0,50):
+    liste[i] = randint(0,10)
+  return liste
+
+def listUniqueValues():
+  new_liste = {}
+  compteur = 0 
+  liste = rempliListe(1,2,5)
+  print(liste)
+  
+  for i in liste.values():
+    new_liste[compteur] = i
+    compteur+=1
+    for g in new_liste.values():
+      if i == g :
+        new_liste.pop(g)
+    
+
+
+
+
+listUniqueValues()
